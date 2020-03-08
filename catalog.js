@@ -16,7 +16,7 @@ class AllProducts{
     createProduct(){
         let wrapper = document.createElement('slot');
         let products = cardStore.getProduct();
-        this.catalogCounter.innerHTML = products.length;
+        this.catalogCounter.innerHTML = `В Вашей корзине ${products.length} товаров`;
         for(let i = 0; i < this.catalogProduct.length; i++){
 
             let index = products.indexOf(this.catalogProduct[i].id);

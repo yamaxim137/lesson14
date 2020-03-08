@@ -34,7 +34,8 @@ class Cart{
     
             let close = createOneProduct.getProductItem({
                 tagName: 'div',
-                className: 'close'
+                className: 'close',
+                textName: '. x'
             })
 
             close.addEventListener('click', function(){
@@ -42,8 +43,15 @@ class Cart{
                 cart.containerCart.innerHTML = ' ';
             })
 
-            cart.containerCart.appendChild(wrapper);
+            let hCart = createOneProduct.getProductItem({
+                tagName: 'h1',
+                className: 'midl zgl',
+                textName: 'Ваша корзина'
+            })
+
             cart.containerCart.appendChild(close);
+            cart.containerCart.appendChild(hCart);
+            cart.containerCart.appendChild(wrapper);            
         });
 
         

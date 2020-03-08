@@ -1,7 +1,7 @@
 .container-product {
-height: 50vh;
+height: 100%;
 width: 100%;
-background-color: green;
+background-color:rgba(161, 139, 13, 0.747);
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
@@ -9,15 +9,16 @@ flex-wrap: wrap;
 
 .container-product .item{
   width: 200px;
-  height: 300px;
+  height: 200px;
   background-color: #fff;
   border: 1px solid red;
   text-align: center;
+  border-radius: 7%;
 }
 
 .container-product .item .img{
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-size: cover;
 /*   background-image: url('./images/audi_r8.jpg'); */
 }
@@ -32,8 +33,21 @@ flex-wrap: wrap;
 }
 
 .close{
-  position: fixed;
+  /* position: relative;
+  top:-40px;
+  left: 150px; */
+  float: right;
+  /* margin-top: -3px; */
   width: 20px;
   height: 20px;
   background-color: red;
+}
+
+.midl{
+  text-align: center;
+}
+
+.reg{
+  margin: 5px;
+  padding: 3px;
 }

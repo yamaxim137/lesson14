@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 2.	Страница каталога продукции -->
+    <!-- a.	Боковое (возможно выпадающее) меню с фильтрами для поиска / сортировки товаров; -->
+    <!-- b.  Набор фильтров должен быть разным для каждой категории.(цена, вес, фирма и т.д.) -->
+    <!-- c.  Несколько категорий товаров. В каждой категории по несколько товаров. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style1.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div class="cont">
+        <div class="ssl">
+             <a href="./main.html">Главная  |  </a>
+             <a href="./index.html">Каталог машин  |  </a>
+             <a href="./registration.html">Регистрация  |  </a>
+        </div>
+    </div>
+    <div class="krsl">Карусель будет тут</div>
     <section class="container-product">
         <section class="container-counter">0</section>
     </section>
 
     <section class="container-cart">
-        Ваша корзина
         <!-- <div class="item"></div> -->
     </section>
 
 
-    <script src="./script.js"></script>
+    <script src="./base.js"></script>
     <script src="./createOneProduct.js"></script>
     <script src="./cardStore.js"></script>
     <script src="./catalog.js"></script>
