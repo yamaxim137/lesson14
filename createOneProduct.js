@@ -17,4 +17,6 @@ class CreateOneProduct{
     }
 }
 
-let createOneProduct = new CreateOneProduct('.container-counter',catalogProduct);
+let createOneProduct = new CreateOneProduct('.container-counter', catalogProduct);
+
+let createOneFaq = new CreateOneProduct('.container-faq', listFAQ);
