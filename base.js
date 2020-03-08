@@ -43,3 +43,22 @@ const catalogProduct = [
         img: './images/черн.jpg'
     }
 ];
+
+const listFAQ = [
+    {
+        id: 'faq1',
+        name: 'faq1',
+        txt: 'первый ответ'
+    },
+    {
+        id: 'faq2',
+        name: 'faq2',
+        txt: 'ещё один'
+        
+    },
+    {
+        id: 'faq3',
+        name: 'faq3',
+        txt: 'помощь скорая и качественная )'
+    }
+];
