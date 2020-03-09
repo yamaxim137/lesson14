@@ -1,35 +1,35 @@
-class CardStore{
+class dtStore{    //CardStore --> dtStore
     constructor(){}
 
-    getProduct(){
-        let products = [];
-        let productsLcStorage = localStorage.getItem('CardStore');
-        if(productsLcStorage !== null){
-            products = JSON.parse(productsLcStorage);
+    getData(){   //getProduct --> getData
+        let items = [];     //products --> items
+        let itemsLcStorage = localStorage.getItem('dtStore');
+        if(itemsLcStorage !== null){
+            items = JSON.parse(itemsLcStorage);
         }
-        return products;
+        return items;
     };
 
-    putProduct(id){
-        let products = this.getProduct();
-        let index = products.indexOf(id);
-        let statusProduct;
+    putData(id){   //putProduct --> putData
+        let items = this.getData();
+        let index = items.indexOf(id);
+        let statusItem;
 
         if(index === -1){
-            products.push(id);
-            statusProduct = true;
+            items.push(id);
+            statusItem = true;
         } else{
-            products.splice(index, 1);
-            statusProduct = false;
+            items.splice(index, 1);
+            statusItem = false;
         }
 
-        localStorage.setItem('CardStore', JSON.stringify(products));
+        localStorage.setItem('dtStore', JSON.stringify(items));
 
         return{
-            statusProduct: statusProduct,
-            products: products
+            statusItem: statusItem,
+            items: items
         }
     };
 }
 
-let cardStore = new CardStore();
+let cardStore = new dtStore();
