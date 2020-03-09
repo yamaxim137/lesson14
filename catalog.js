@@ -15,7 +15,7 @@ class AllProducts{
 
     createProduct(){
         let wrapper = document.createElement('slot');
-        let products = cardStore.getProduct();
+        let products = cardStore.getData();
         this.catalogCounter.innerHTML = `В Вашей корзине ${products.length} товаров`;
         for(let i = 0; i < this.catalogProduct.length; i++){
 
@@ -55,14 +55,14 @@ class AllProducts{
             });
             btn.addEventListener('click', function(){
                 let id = this.getAttribute('id');
-                let result = cardStore.putProduct(id);
+                let result = cardStore.putData(id);
 
-                allProducts.catalogCounter.innerHTML = result.products.length;   // Добавили вывод числа товаров в корзине
+                allProducts.catalogCounter.innerHTML = result.items.length;   // Добавили вывод числа товаров в корзине
 
-                if(result.statusProduct){
-                    this.innerHTML = 'Удалить из корзины';
+                if(result.statusItem){
+                    this.innerHTML = 'из корзины';
                 } else{
-                    this.innerHTML = 'Добавление в корзину';
+                    this.innerHTML = 'в корзину';
                 }
             })
             

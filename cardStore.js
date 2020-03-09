@@ -32,4 +32,5 @@ class dtStore{    //CardStore --> dtStore
     };
 }
 
-let cardStore = new dtStore();
+let cardStore = new dtStore(); // выбранные карточки (товары)
+let userStore = new dtStore(); // логины-пароли

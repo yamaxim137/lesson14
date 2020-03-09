@@ -59,7 +59,7 @@ class Cart{
     }
 
     getProductCart(){
-        let products = cardStore.getProduct();
+        let products = cardStore.getData();
         let productsCart = [];
         for( let i = 0; i < this.catalogProduct.length; i++){
             if(products.indexOf(this.catalogProduct[i].id) !== -1){
